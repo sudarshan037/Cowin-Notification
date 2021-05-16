@@ -28,8 +28,8 @@ class User:
     def getClient(self):
         return self.client
 
-user = User()
-user.setClient()
-client = user.getClient()
-with client:
-    client.loop.run_until_complete(client.send_message('me', 'blah'))
+# user = User()
+# user.setClient()
+# client = user.getClient()
+# with client:
+#     client.loop.run_until_complete(client.send_message('', 'blah'))

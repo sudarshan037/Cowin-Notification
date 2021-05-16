@@ -1,4 +1,5 @@
 def parser(data):
+    results = []
     for center in data['centers']:
         for session in center['sessions']:
             if session['min_age_limit'] == 18:
@@ -8,4 +9,5 @@ def parser(data):
                     'availablity': session['available_capacity'],
                     'vaccine': session['vaccine']
                 }
-                return temp
+                results.append(temp)   
+    return results
