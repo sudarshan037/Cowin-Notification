@@ -1,5 +1,7 @@
 import configparser
 from telethon import TelegramClient
+from datetime import datetime
+import pytz
 
 class User:
     api_id, api_hash, phone, username = (None, None, None, None)
@@ -23,13 +25,15 @@ class User:
             self.api_id,
             self.api_hash
             )
-        print("Client Created")
+        tz_India = pytz.timezone('Asia/Kolkata')
+        now = datetime.now(tz_India)
+        print(now.strftime("%d-%m-%Y"), "|", now.time(), ":Client Created")
 
     def getClient(self):
         return self.client
 
-# user = User()
-# user.setClient()
-# client = user.getClient()
-# with client:
-#     client.loop.run_until_complete(client.send_message('', 'blah'))
+#user = User()
+#user.setClient()
+#client = user.getClient()
+#with client:
+#    client.loop.run_until_complete(client.send_message('me', 'blah'))

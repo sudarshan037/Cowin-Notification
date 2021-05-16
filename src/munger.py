@@ -9,5 +9,6 @@ def parser(data):
                     'availablity': session['available_capacity'],
                     'vaccine': session['vaccine']
                 }
-                results.append(temp)   
+                #print(temp)
+                results.append(temp)
     return results
