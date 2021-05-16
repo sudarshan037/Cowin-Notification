@@ -10,3 +10,4 @@ for pincode in pincodes:
         #send message
         pprint.pprint(temp)
         print(message.messages[random.randint(0, 4)])
+    
