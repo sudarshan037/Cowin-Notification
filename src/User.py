@@ -18,9 +18,11 @@ class User:
 
     def setClient(self):
         # Create the client and connect
-        self.client = TelegramClient(self.username,
-                                     self.api_id,
-                                     self.api_hash)
+        self.client = TelegramClient(
+            self.username,
+            self.api_id,
+            self.api_hash
+            )
         print("Client Created")
 
     def getClient(self):
