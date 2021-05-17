@@ -4,6 +4,7 @@ __pycache__/
 *$py.class
 *.session
 config.ini
+log.txt
 # C extensions
 *.so
 
