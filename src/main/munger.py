@@ -7,7 +7,9 @@ def parser(data):
                     'age': '18+',
                     'address': center['address'],
                     'availablity': session['available_capacity'],
-                    'vaccine': session['vaccine']
+                    'vaccine': session['vaccine'],
+                    'pincode': center['pincode'],
+                    'date': session['date']
                 }
                 #print(temp)
                 results.append(temp)

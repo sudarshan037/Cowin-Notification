@@ -17,8 +17,8 @@ def caller(pincode):
     }
 
     r = requests.get(url=URL, params=PARAMS, headers=headers)
-
+    print(r.text)
     data = r.json()
     return data
 
-#pprint(caller('302013'))
+pprint(caller('302012'))
