@@ -1,7 +1,6 @@
 from pprint import pprint
 from datetime import date
 import requests
-import sys
 
 def caller(pincode):
     # date
@@ -22,5 +21,5 @@ def caller(pincode):
         data = {"centers": []}
     return data
 
-#pprint(caller('311001'))
+pprint(caller('311001'))
 

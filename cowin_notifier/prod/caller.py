@@ -1,7 +1,6 @@
 from pprint import pprint
 from datetime import date
 import requests
-import sys
 
 def caller(pincode):
     # date
