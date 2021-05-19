@@ -10,7 +10,7 @@ class User:
     def __init__(self):
         # Reading configs
         config = configparser.ConfigParser()
-        config.read("../../config.ini")
+        config.read("config.ini")
 
         # setting config values
         self.api_id = config['Telegram']['api_id']

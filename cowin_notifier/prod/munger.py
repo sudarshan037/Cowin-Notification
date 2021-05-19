@@ -6,10 +6,11 @@ def parser(data):
                 temp = {
                     'age': '18+',
                     'address': center['address'],
-                    'availablity': session['available_capacity'],
+                    'availability': session['available_capacity'],
                     'vaccine': session['vaccine'],
                     'pincode': center['pincode'],
-                    'date': session['date']
+                    'date': session['date'],
+                    'center_id': center['center_id']
                 }
                 #print(temp)
                 results.append(temp)

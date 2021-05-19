@@ -17,8 +17,10 @@ def caller(pincode):
     }
 
     r = requests.get(url=URL, params=PARAMS, headers=headers)
-    print(r.text)
-    data = r.json()
+    try:
+        data = r.json()
+    except:
+        data = {"centers": []}
     return data
 
-pprint(caller('302012'))
+#pprint(caller('302012'))
