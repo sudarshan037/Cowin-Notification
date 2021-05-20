@@ -1,6 +1,7 @@
 from pprint import pprint
 from datetime import date
 import requests
+import time
 
 def caller(pincode):
     # date
@@ -20,6 +21,7 @@ def caller(pincode):
         data = r.json()
     except:
         data = {"centers": []}
+        time.sleep(120)
     return data
 
 #pprint(caller('302012'))
