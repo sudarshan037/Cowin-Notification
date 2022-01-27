@@ -1,9 +1,12 @@
 import time
 import traceback
-from prod import munger
-from prod.caller import caller
-from prod.message import messages
-from messenger import send_message
+#from prod import munger
+#from prod.caller import caller
+#from prod.message import messages
+import munger
+from caller import caller
+from message import messages
+
 import logging
 
 logging.basicConfig(filename='prod.log',
